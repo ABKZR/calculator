@@ -60,7 +60,6 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
           result = "Error";
         }
       } else {
-
         equationFontSize = 48.0;
         resultFontSize = 38.0;
         if (equation == "0") {
@@ -137,9 +136,9 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                 child: Table(
                   children: [
                     TableRow(children: [
-                      buildButton("C", 1, Colors.redAccent),
-                      buildButton("<-", 1, Colors.blue),
-                      buildButton("/", 1, Colors.blue),
+                      buildButton("C"  , 1, Colors.redAccent),
+                      buildButton("<-" , 1, Colors.blue),
+                      buildButton("/"  , 1, Colors.blue),
                     ]),
                     TableRow(children: [
                       buildButton("7", 1, Colors.black54),
@@ -190,3 +189,4 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
     );
   }
 }
+
