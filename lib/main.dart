@@ -37,9 +37,15 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
       if (buttonText == "C") {
         result = "0";
         equation = "0";
+        equationFontSize = 38.0;
+        resultFontSize = 48.0;
       } else if (buttonText == "<-") {
+        equationFontSize = 48.0;
+        resultFontSize = 38.0;
         equation = equation.substring(0, equation.length - 1);
         if (equation == "") {
+          equationFontSize = 38.0;
+          resultFontSize = 48.0;
           equation = "0";
         }
       } else if (buttonText == "=") {
@@ -54,6 +60,9 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
           result = "Error";
         }
       } else {
+
+        equationFontSize = 48.0;
+        resultFontSize = 38.0;
         if (equation == "0") {
           equation = buttonText;
         } else {
